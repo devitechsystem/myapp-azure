@@ -6,6 +6,13 @@ export default function Home() {
   const moveToOffice = () => {
     route.push("/office");
   };
+
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("intentional delay");
+    }, 4000);
+  });
+
   return (
     <>
       <Link
